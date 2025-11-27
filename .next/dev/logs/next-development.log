@@ -1,0 +1,61 @@
+[00:00:01.105] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 5.0.2
+[00:00:01.114] Server  LOG     
+[00:00:01.116] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:01.116] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:01.117] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:01.118] Server  LOG     
+[00:00:01.118] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:01.119] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:01.119] Server  LOG     
+[00:00:01.457] Server  LOG      ✓ Ready in 991ms
+[00:00:09.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.969] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           __processed_0dadc324-bc8b-4cb7-b2b3-b12d819cd727__="true"
+                          >
+                  ...
+
+[00:00:10.406] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.406] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.406] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764263665940}
+[00:02:11.822] Server  LOG     [v0] Sending form data to n8n webhook: {}
+[00:02:12.219] Server  LOG     [v0] Successfully sent form data to n8n webhook
+[01:06:22.965] Server  LOG     [v0] Sending form data to n8n webhook: {}
+[01:06:23.385] Server  LOG     [v0] Successfully sent form data to n8n webhook
+[01:14:04.305] Server  LOG     [v0] Sending form data to n8n webhook: {}
+[01:14:04.807] Server  LOG     [v0] Successfully sent form data to n8n webhook
+[01:21:02.802] Server  LOG        Reload env: .env
+[01:21:57.587] Server  LOG     [v0] Sending form data to n8n webhook: {}
+[01:21:58.012] Server  LOG     [v0] Successfully sent form data to n8n webhook
