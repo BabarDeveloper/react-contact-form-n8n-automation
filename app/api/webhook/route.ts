@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Example: https://your-instance.n8n.cloud/webhook/webhook-id
-    const WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || "https://nodes-mary.syncjourney.com/webhook-test/contact"
+    const WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || "https://n8n.io/webhook-test/contact"
 
     // Prepare the payload to send to n8n
     const payload = {
